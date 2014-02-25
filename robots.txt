@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://innparusu95.github.io/sitemap.xml 
