@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://innparusu95.github.io/atom.xml" rel="self"/>
   <link href="http://innparusu95.github.io/"/>
-  <updated>2014-02-25T18:13:33+09:00</updated>
+  <updated>2014-02-25T19:38:09+09:00</updated>
   <id>http://innparusu95.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -46,6 +46,51 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>git add -A
 </span><span class='line'>git commit "add post"
 </span><span class='line'>git push -u bitbucket source</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git]]></title>
+    <link href="http://innparusu95.github.io/blog/2014/02/25/git/"/>
+    <updated>2014-02-25T00:00:00+09:00</updated>
+    <id>http://innparusu95.github.io/blog/2014/02/25/git</id>
+    <content type="html"><![CDATA[<h2>直前のcommit logの修正</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git commit --amend</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>複数のcommitを一つのcommitにする</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git rebase -i HEAD~2
+</span><span class='line'># HEAD~2はHEADを含めて2つという意味</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pick 63d6760 Add feature-C
+</span><span class='line'>pick 7a9c87e Fix typo
+</span><span class='line'>↓
+</span><span class='line'>pick 63d6760 Add feature-C
+</span><span class='line'>f 7a9c87e Fix typo
+</span><span class='line'># Fix typo の変更は盛り込むが,commit log を残さない</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>リモートのブランチを削除</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># remoteのfeatre-Dを削除
+</span><span class='line'>git push origin :feature-D</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
