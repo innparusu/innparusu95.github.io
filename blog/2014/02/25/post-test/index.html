@@ -5,12 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>テスト - My Octopress Blog</title>
+  <title>Octopress - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="記事作成 1
+bundle exec rake "new_post[post title]" 確認方法 1
+bundle exec rake preview localhostのport4000で確認できる. デプロイ 1
+bundle exec rake gen_deploy bit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">テスト</h1>
+      <h1 class="entry-title">Octopress</h1>
     
     
       <p class="meta">
@@ -92,7 +94,35 @@
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><h2>記事作成</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake "new_post[post title]"</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>確認方法</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake preview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>localhostのport4000で確認できる.</p>
+
+<h2>デプロイ</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake gen_deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>bit bucketへのpush</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add -A
+</span><span class='line'>git commit "add post"
+</span><span class='line'>git push -u bitbucket source</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -117,6 +147,12 @@
 
 <time datetime="2014-02-25T16:23:02+09:00" pubdate data-updated="true">Feb 25<span>th</span>, 2014</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
 
 
     </p>
@@ -146,7 +182,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/02/25/post-test/">テスト</a>
+        <a href="/blog/2014/02/25/post-test/">Octopress</a>
       </li>
     
   </ul>

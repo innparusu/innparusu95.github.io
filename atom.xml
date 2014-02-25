@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://innparusu95.github.io/atom.xml" rel="self"/>
   <link href="http://innparusu95.github.io/"/>
-  <updated>2014-02-25T17:21:26+09:00</updated>
+  <updated>2014-02-25T18:12:45+09:00</updated>
   <id>http://innparusu95.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,11 +14,39 @@
 
   
   <entry>
-    <title type="html"><![CDATA[テスト]]></title>
+    <title type="html"><![CDATA[Octopress]]></title>
     <link href="http://innparusu95.github.io/blog/2014/02/25/post-test/"/>
     <updated>2014-02-25T16:23:02+09:00</updated>
     <id>http://innparusu95.github.io/blog/2014/02/25/post-test</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<h2>記事作成</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake "new_post[post title]"</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>確認方法</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake preview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>localhostのport4000で確認できる.</p>
+
+<h2>デプロイ</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake gen_deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>bit bucketへのpush</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add -A
+</span><span class='line'>git commit "add post"
+</span><span class='line'>git push -u bitbucket source</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   

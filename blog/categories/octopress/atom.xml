@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
+  <link href="http://innparusu95.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://innparusu95.github.io/"/>
+  <updated>2014-02-25T18:12:45+09:00</updated>
+  <id>http://innparusu95.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress]]></title>
+    <link href="http://innparusu95.github.io/blog/2014/02/25/post-test/"/>
+    <updated>2014-02-25T16:23:02+09:00</updated>
+    <id>http://innparusu95.github.io/blog/2014/02/25/post-test</id>
+    <content type="html"><![CDATA[<h2>記事作成</h2>
+
+<p><code>
+bundle exec rake "new_post[post title]"
+</code></p>
+
+<h2>確認方法</h2>
+
+<p><code>
+bundle exec rake preview
+</code></p>
+
+<p>localhostのport4000で確認できる.</p>
+
+<h2>デプロイ</h2>
+
+<p><code>
+bundle exec rake gen_deploy
+</code></p>
+
+<h2>bit bucketへのpush</h2>
+
+<p><code>
+git add -A
+git commit "add post"
+git push -u bitbucket source
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
